@@ -15,9 +15,9 @@ close_all()
 rm(list = ls())
 
 d0 <- rbind(
-    data.frame(hv = 1, read.csv("derived_data/CE_shoots_hv_1.csv")),
-    data.frame(hv = 2, read.csv("derived_data/CE_shoots_hv_2.csv")),
-    data.frame(hv = 3, read.csv("derived_data/CE_shoots_hv_3.csv")))
+    data.frame(hv = 1, read.csv("data/CE_shoots_hv_1.csv")),
+    data.frame(hv = 2, read.csv("data/CE_shoots_hv_2.csv")),
+    data.frame(hv = 3, read.csv("data/CE_shoots_hv_3.csv")))
 
 ## the pyrenee soil has a productivity that is approx 3 times smaller.
 ## adjust for this using an empirical factor
@@ -76,9 +76,9 @@ print(summary(d123.aov))
 ### Figure 1a - shoot biomass
 
 d0 <- rbind(
-    data.frame(hv = 1, read.csv("derived_data/CE_shoots_hv_1.csv")),
-    data.frame(hv = 2, read.csv("derived_data/CE_shoots_hv_2.csv")),
-    data.frame(hv = 3, read.csv("derived_data/CE_shoots_hv_3.csv")))
+    data.frame(hv = 1, read.csv("data/CE_shoots_hv_1.csv")),
+    data.frame(hv = 2, read.csv("data/CE_shoots_hv_2.csv")),
+    data.frame(hv = 3, read.csv("data/CE_shoots_hv_3.csv")))
 
 d2 <- transform(
     d0,
